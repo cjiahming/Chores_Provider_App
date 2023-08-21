@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/choreDescEditText"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddChoresFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/top_nav"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <TextView
+        android:id="@+id/choresTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:text="@string/addTask"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:translationY="20dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".FirstFragment">
+
+        <ImageButton
+            android:id="@+id/backButtonChores"
+            android:layout_width="59dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="#6047F7"
+            android:contentDescription="@string/backToTaskNav"
+            android:contextClickable="false"
+            android:src="@drawable/baseline_arrow_back_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/choreTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/choreTitle"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="62dp" />
+
+        <EditText
+            android:id="@+id/choreTitleText"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#2E0112A5"
+            android:ems="10"
+            android:hint="@string/space"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="#77000000"
+            app:layout_constraintStart_toStartOf="@+id/choreTitleTextView"
+            app:layout_constraintTop_toBottomOf="@+id/choreTitleTextView" />
+
+        <TextView
+            android:id="@+id/choreDescTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/choreDesc"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/choreTitleText"
+            app:layout_constraintTop_toBottomOf="@+id/choreTitleText" />
+
+        <EditText
+            android:id="@+id/choreDescText"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#2E0112A5"
+            android:ems="10"
+            android:hint="@string/space"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="#77000000"
+            app:layout_constraintStart_toStartOf="@+id/choreDescTextView"
+            app:layout_constraintTop_toBottomOf="@+id/choreDescTextView" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="199dp" />
+
+        <TextView
+            android:id="@+id/priceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/price"
+            app:layout_constraintStart_toStartOf="@+id/guideline4"
+            app:layout_constraintTop_toBottomOf="@+id/choreDescText" />
+
+        <EditText
+            android:id="@+id/priceTextNumber"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="#2E0112A5"
+            android:ems="10"
+            app:layout_constraintStart_toStartOf="@+id/guideline4"
+            app:layout_constraintTop_toBottomOf="@+id/priceTextView" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Accepted Email"
+            app:layout_constraintStart_toStartOf="@+id/guideline4"
+            app:layout_constraintTop_toBottomOf="@+id/priceTextNumber" />
+
+        <TextView
+            android:id="@+id/startTimeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/startTime"
+            app:layout_constraintStart_toStartOf="@+id/addOwnerEmail"
+            app:layout_constraintTop_toBottomOf="@+id/addOwnerEmail" />
+
+        <TextView
+            android:id="@+id/endTimeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/endTime"
+            app:layout_constraintStart_toStartOf="@+id/guideline4"
+            app:layout_constraintTop_toTopOf="@+id/startTimeTextView" />
+
+
+        <Button
+            android:id="@+id/postButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:backgroundTint="#18AE00"
+            android:text="@string/post"
+            app:cornerRadius="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/addAcceptedEmail"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="#2E0112A5"
+            android:ems="10"
+            android:hint="@string/space"
+            android:inputType="text"
+            app:layout_constraintStart_toStartOf="@+id/textView7"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <EditText
+            android:id="@+id/editTextStartTime"
+            android:layout_width="160dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="8dp"
+            android:background="#2E0112A5"
+            android:ems="10"
+            android:inputType="time"
+            app:layout_constraintStart_toStartOf="@+id/startTimeTextView"
+            app:layout_constraintTop_toBottomOf="@+id/startTimeTextView" />
+
+        <EditText
+            android:id="@+id/editTextEndTime"
+            android:layout_width="160dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            android:background="#2E0112A5"
+            android:ems="10"
+            android:inputType="time"
+            app:layout_constraintStart_toStartOf="@+id/guideline4"
+            app:layout_constraintTop_toBottomOf="@+id/endTimeTextView" />
+
+        <EditText
+            android:id="@+id/addChoresID"
+            android:layout_width="150dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="10dp"
+            android:background="#2E0112A5"
+            android:ems="10"
+            android:hint="@string/space"
+            android:inputType="text"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <EditText
+            android:id="@+id/addOwnerEmail"
+            android:layout_width="149dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="10dp"
+            android:background="#2E0112A5"
+            android:ems="10"
+            android:hint="Enter your details"
+            android:inputType="text"
+            app:layout_constraintStart_toStartOf="@+id/textView14"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/choresID"
+            app:layout_constraintStart_toStartOf="@+id/choreDescText"
+            app:layout_constraintTop_toBottomOf="@+id/choreDescText" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Owner Email"
+            app:layout_constraintStart_toStartOf="@+id/addChoresID"
+            app:layout_constraintTop_toBottomOf="@+id/addChoresID" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
+
+

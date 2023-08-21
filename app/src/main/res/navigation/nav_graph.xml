@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    android:label="fragment_chores1"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="tarc.edu.my.myapplication.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="tarc.edu.my.myapplication.PaymentFragment"
+        android:label="fragment_payment"
+        tools:layout="@layout/fragment_payment">
+        <action
+            android:id="@+id/action_paymentFragment_to_fragmentPaymentHistory"
+            app:destination="@id/fragmentPaymentHistory" />
+        <action
+            android:id="@+id/action_paymentFragment_to_fragmentViewEarnings"
+            app:destination="@id/fragmentViewEarnings" />
+    </fragment>
+    <fragment
+        android:id="@+id/reviewFragment"
+        android:name="tarc.edu.my.myapplication.ReviewFragment"
+        android:label="fragment_review"
+        tools:layout="@layout/fragment_review">
+        <action
+            android:id="@+id/action_reviewFragment_to_addReview"
+            app:destination="@id/addReview" />
+        <action
+            android:id="@+id/action_reviewFragment_to_myReview"
+            app:destination="@id/myReview" />
+
+    </fragment>
+
+    <!-- User Module -->
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="tarc.edu.my.myapplication.UserFragment"
+        android:label="fragment_user"
+        tools:layout="@layout/fragment_user">
+        <action
+            android:id="@+id/action_userFragment_to_profile2"
+            app:destination="@id/profile2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/choresFragment"
+        android:name="tarc.edu.my.myapplication.ChoresFragment1"
+        android:label="fragment_chores1"
+        tools:layout="@layout/fragment_chores1">
+        <action
+            android:id="@+id/action_choresFragment_to_searchChoresFragment"
+            app:destination="@id/searchChoresFragment" />
+        <action
+            android:id="@+id/action_choresFragment_to_addChoresFragment"
+            app:destination="@id/addChoresFragment" />
+        <action
+            android:id="@+id/action_choresFragment_to_postedTasks"
+            app:destination="@id/postedTasks" />
+    </fragment>
+    <fragment
+        android:id="@+id/addReview"
+        android:name="tarc.edu.my.myapplication.AddReview"
+        android:label="fragment_add_review"
+        tools:layout="@layout/fragment_add_review">
+        <action
+            android:id="@+id/action_addReview_to_reviewFragment"
+            app:destination="@id/reviewFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/viewReview"
+        android:name="tarc.edu.my.myapplication.ViewReview"
+        android:label="fragment_view_review"
+        tools:layout="@layout/fragment_view_review">
+        <argument
+            android:name="currentReview"
+            app:argType="tarc.edu.my.myapplication.data.Review" />
+        <action
+            android:id="@+id/action_viewReview_to_myReview"
+            app:destination="@id/myReview" />
+        <action
+            android:id="@+id/action_viewReview_to_myReview2"
+            app:destination="@id/myReview" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/myReview"
+        android:name="tarc.edu.my.myapplication.MyReview"
+        android:label="fragment_my_review"
+        tools:layout="@layout/fragment_my_review">
+        <action
+            android:id="@+id/action_myReview_to_reviewFragment"
+            app:destination="@id/reviewFragment" />
+        <action
+            android:id="@+id/action_myReview_to_viewReview"
+            app:destination="@id/viewReview" />
+        <action
+            android:id="@+id/action_myReview_to_viewReview2"
+            app:destination="@id/viewReview" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profile2"
+        android:name="tarc.edu.my.myapplication.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profile2_to_userFragment"
+            app:destination="@id/userFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/editAddressFragment"
+        android:name="tarc.edu.my.myapplication.EditAddressFragment"
+        android:label="fragment_edit_address"
+        tools:layout="@layout/fragment_edit_address">
+        <action
+            android:id="@+id/action_editAddressFragment_to_userFragment"
+            app:destination="@id/userFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentPaymentHistory"
+        android:name="tarc.edu.my.myapplication.FragmentPaymentHistory"
+        android:label="fragment_paymenthistory"
+        tools:layout="@layout/fragment_paymenthistory" />
+    <fragment
+        android:id="@+id/fragmentViewEarnings"
+        android:name="tarc.edu.my.myapplication.FragmentViewEarnings"
+        android:label="fragment_viewearnings"
+        tools:layout="@layout/fragment_viewearnings" />
+    <fragment
+        android:id="@+id/fragmentPaymentMethod"
+        android:name="tarc.edu.my.myapplication.FragmentPaymentMethod"
+        android:label="FragmentPaymentMethod"
+        tools:layout="@layout/fragment_paymentmethod" >
+        <action
+            android:id="@+id/action_fragmentPaymentMethod_to_fragmentFPX"
+            app:destination="@id/fragmentFPX" />
+        <action
+            android:id="@+id/action_fragmentPaymentMethod_to_fragmentCard"
+            app:destination="@id/fragmentCard" />
+        <action
+            android:id="@+id/action_fragmentPaymentMethod_to_fragmentEWallet"
+            app:destination="@id/fragmentEWallet" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCard"
+        android:name="tarc.edu.my.myapplication.FragmentCard"
+        android:label="fragment_card"
+        tools:layout="@layout/fragment_card">
+        <action
+            android:id="@+id/action_fragmentCard_to_fragmentPaymentMethod"
+            app:destination="@id/fragmentPaymentMethod" />
+        <action
+            android:id="@+id/action_fragmentCard_to_fragmentTqPayment"
+            app:destination="@id/fragmentTqPayment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentTqPayment"
+        android:name="tarc.edu.my.myapplication.FragmentTqPayment"
+        android:label="fragment_tqpayment"
+        tools:layout="@layout/fragment_tqpayment">
+        <action
+            android:id="@+id/action_fragmentTqPayment_to_fragmentPosterReceipt"
+            app:destination="@id/fragmentPosterReceipt" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentPosterReceipt"
+        android:name="tarc.edu.my.myapplication.FragmentPosterReceipt"
+        android:label="FragmentPosterReceipt"
+        tools:layout="@layout/fragment_posterreceipt" >
+        <action
+            android:id="@+id/action_fragmentPosterReceipt_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentFPX"
+        android:name="tarc.edu.my.myapplication.FragmentFPX"
+        android:label="fragment_fpx"
+        tools:layout="@layout/fragment_fpx">
+        <action
+            android:id="@+id/action_fragmentFPX_to_fragmentPaymentMethod"
+            app:destination="@id/fragmentPaymentMethod" />
+        <action
+            android:id="@+id/action_fragmentFPX_to_fragmentTqPayment"
+            app:destination="@id/fragmentTqPayment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentEWallet"
+        android:name="tarc.edu.my.myapplication.FragmentEWallet"
+        android:label="fragment_ewallet"
+        tools:layout="@layout/fragment_ewallet">
+        <action
+            android:id="@+id/action_fragmentEWallet_to_fragmentTqPayment"
+            app:destination="@id/fragmentTqPayment" />
+        <action
+            android:id="@+id/action_fragmentEWallet_to_fragmentPaymentMethod"
+            app:destination="@id/fragmentPaymentMethod" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchChoresFragment"
+        android:name="tarc.edu.my.myapplication.SearchChoresFragment"
+        android:label="fragment_search_chores"
+        tools:layout="@layout/fragment_search_chores">
+        <action
+            android:id="@+id/action_searchChoresFragment_to_choresFragment"
+            app:destination="@id/choresFragment" />
+        <action
+            android:id="@+id/action_searchChoresFragment_to_viewDetailsSearch"
+            app:destination="@id/viewDetailsSearch" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewDetailsSearch"
+        android:name="tarc.edu.my.myapplication.ViewDetailsSearch"
+        android:label="fragment_view_details_search"
+        tools:layout="@layout/fragment_view_details_search" >
+        <action
+            android:id="@+id/action_viewDetailsSearch_to_searchChoresFragment"
+            app:destination="@id/searchChoresFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addChoresFragment"
+        android:name="tarc.edu.my.myapplication.AddChoresFragment"
+        android:label="fragment_add_chores"
+        tools:layout="@layout/fragment_add_chores" >
+        <action
+            android:id="@+id/action_addChoresFragment_to_choresFragment"
+            app:destination="@id/choresFragment" />
+        <action
+            android:id="@+id/action_addChoresFragment_to_fragmentPaymentMethod"
+            app:destination="@id/fragmentPaymentMethod" />
+    </fragment>
+    <fragment
+        android:id="@+id/postedTasks"
+        android:name="tarc.edu.my.myapplication.PostedTasks"
+        android:label="PostedTasks"
+        tools:layout="@layout/fragment_posted_tasks" >
+        <action
+            android:id="@+id/action_postedTasks_to_choresFragment"
+            app:destination="@id/choresFragment" />
+    </fragment>
+
+
+</navigation>

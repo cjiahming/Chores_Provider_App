@@ -1,0 +1,257 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_review">Review</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_main">MainActivity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="User">User</string>
+    <string name="Review">Review</string>
+    <string name="description">Des :</string>
+    <string name="price">Price :</string>
+    <string name="accepted">Accepted By :</string>
+    <string name="addReview">Add Review</string>
+    <string name="viewDetails">View Details</string>
+    <string name="chores">Chores</string>
+    <string name="postedTask">Posted Task</string>
+    <string name="acceptedTask">Accepted Task</string>
+    <string name="editDetails">Edit Details</string>
+    <string name="cancelTask">Cancel Task</string>
+    <string name="searchTask">Search Task</string>
+    <string name="myTask">My Task</string>
+    <string name="addTask">Add Task</string>
+    <string name="choreTitle">Chore Title</string>
+    <string name="choreDesc">Chore Description</string>
+    <string name="choreCategories">Chore Categories</string>
+    <string name="petLover">Pet Lover</string>
+    <string name="sewing">Sewing</string>
+    <string name="cleaning">Cleaning</string>
+    <string name="packaging">Packaging</string>
+    <string name="houseChores">House Chores</string>
+    <string name="copywriter">Copy-Writer</string>
+    <string name="address">Address</string>
+    <string name="choreprice">Price</string>
+    <string name="workfromhomw">Work From Home</string>
+    <string name="workOnSite">Work On-Site</string>
+    <string name="startTime">Start Time</string>
+    <string name="endTime">End Time</string>
+    <string name="backToTaskNav">Back</string>
+    <string name="space">Enter Your Detail</string>
+    <string name="post">Post</string>
+    <string name="accept">Accept</string>
+    <string name="search">Search</string>
+    <string name="choresID">Chores ID : </string>
+
+    <string name="task">Task</string>
+    <string name="complete">Completed</string>
+    <string name="call">Call</string>
+    <string name="editTask">Edit Task</string>
+    <string name="empty"> - </string>
+    <string name="title">Title : </string>
+    <string name="name">Name : </string>
+    <string name="age">Age : </string>
+    <string name="ratebar">Rating</string>
+    <string name="desc">Description : </string>
+    <string name="categories">Categories : </string>
+    <string name="time">Time : </string>
+    <string name="address1">Address : </string>
+
+    <string name="edit">Edit</string>
+    <string-array name="addSpinner">
+        <item>Address 1</item>
+        <item>Address 2</item>
+        <item>Address 3</item>
+    </string-array>
+
+    #add review page
+    <string name="choresTT">Chores Title : </string>
+    <string name="choresDescR">Chores Description : </string>
+    <string name="choresAccR">Chores Accepted By : </string>
+    <string name="rating">Rating : </string>
+    <string name="comment">Comments : </string>
+    <string name="photos">Photos : </string>
+    <string name="writeComment">Write Comments Here</string>
+    <string name="submit">Submit</string>
+    <string name="done">The Job Has Been Done!</string>
+    <string name="no_record">No Record</string>
+    <string name="reviewGo">Go to Review >> </string>
+    <string name="reviewView">View Your Details</string>
+    <string name="myReview">My Review</string>
+    <string name="myReviewDesc">Chores Description :</string>
+    <string name="comments">Your Comments</string>
+
+    <string-array name="reviewTitle">
+        <item>House Cleaning</item>
+        <item>Sewing</item>
+        <item>Copy-Writer</item>
+        <item>House Chores</item>
+        <item>Packaging</item>
+        <item>Pet Lover</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <!-- PAYMENT MODULE -->
+    <!-- GLOBAL PAYMENT MODULE MESSAGE -->
+    <string name="amountToPayMsg">Amount To Pay</string>
+    <string name="TestMsg1">Chores Posting</string>
+    <string name="appName">Chores System</string>
+    <string name="payBtnMessage">Pay Now</string>
+    <string name="receiptPageTitle">Payment Receipt</string>
+    <string name="downloadReceipt">Download Receipt</string>
+    <string name="receipt">Receipt</string>
+    <string name="date">3/20/2023</string>
+    <string name="RM">RM</string>
+
+    <!-- PAYMENT METHOD PAGE -->
+    <string name="advancePaymentMsg">Advance payment is required for the job to be posted.</string>
+
+    <string name="fpxMethod">FPX</string>
+    <string name="maybank">Maybank</string>
+    <string name="publicBank">Public Bank</string>
+    <string name="cimb">CIMB Bank</string>
+    <string name="hongLeong">Hong Leong Bank</string>
+    <string name="bankIslam">Bank Islam</string>
+
+    <string name="creditDebitMethod">Credit/Debit Card</string>
+    <string name="usingCard">Pay Using Card</string>
+
+    <string name="ewalletMethod">E-Wallet</string>
+    <string name="tng">Touch \'N\' Go</string>
+    <string name="boost">Boost Wallet</string>
+    <string name="grab">Grab Pay</string>
+
+    <!-- E-WALLET PAGE -->
+    <string name="e_wallet">E-Wallet Payment</string>
+    <string name="paywith_e">Pay with E-Wallet</string>
+    <string name="E_paymentAmount">RM 150.00</string>
+    <string name="e_paymentDetails">Payment Details:</string>
+    <string name="payTo">Pay To:</string>
+
+    <!-- FPX PAGE -->
+    <string name="FPX">FPX Payment</string>
+    <string name="paywith_fpx">FPX Online Bank-In</string>
+    <string name="fpxEnterAmountMsg">Enter amount to pay</string>
+    <string name="FPX_paymentAmount">RM 150.00</string>
+
+    <!-- CARD PAGE -->
+    <string name="card">Card Payment</string>
+    <string name="paywith_card">Select card type:</string>
+    <string name="creditCard">Credit Card</string>
+    <string name="debitCard">Debit Card</string>
+    <string name="cardNum">Card Number</string>
+    <string name="expDate">Expiry Date</string>
+    <string name="cvv">CVV</string>
+    <string name="cardHolderName">Card Holder\'s Name</string>
+    <string name="card_amountToPay">150.00</string>
+
+    <!-- THANK YOU PAYMENT PAGE -->
+    <string name="thankYou">THANK YOU!</string>
+    <string name="paymentReceived">Your payment is received and your task is posted successfully!</string>
+    <string name="viewReceiptMsg">View Receipt</string>
+
+    <!-- PAYMENT PAGE OPTION -->
+    <string name="payment2">Payment</string>
+    <string name="paymentHistory">Payment History</string>
+    <string name="viewEarnings">View Earnings</string>
+
+    <!-- POSTER RECEIPT PAGE -->
+    <string name="paymentID">Payment ID</string>
+    <string name="paymentDate">Payment Date</string>
+    <string name="paymentMethod">Payment Method</string>
+    <string name="paymentAmount">Payment Amount</string>
+    <string name="paidBy">Paid By</string>
+    <string name="paidTo">Paid To</string>
+    <string name="cName">Chore\'s Name</string>
+
+    <string name="paymentIDGenerated">PYM001</string>
+    <string name="paymentDateGenerated">3/20/2023</string>
+    <string name="paymentMethodChosen">Maybank2U</string>
+    <string name="paymentAmountGenerated">RM 150.00</string>
+    <string name="paidByGenerated">Benjamin</string>
+    <string name="paidToGenerated">Chores System</string>
+
+
+    <!-- WORKER RECEIPT PAGE -->
+    <string name="wPaymentID">Payment ID</string>
+    <string name="wPaymentDate">Payment Date</string>
+    <string name="wPaymentMethod">Payment Method</string>
+    <string name="wPaymentAmount">Payment Amount</string>
+    <string name="wPaidBy">Paid By</string>
+    <string name="wPaidTo">Paid To</string>
+
+    <string name="wPaymentIDGenerated">PYM001</string>
+    <string name="wPaymentDateGenerated">3/20/2023</string>
+    <string name="wPaymentMethodChosen">Maybank2U</string>
+    <string name="wPaymentAmountGenerated">RM 150.00</string>
+    <string name="wPaidByGenerated">Benjamin</string>
+    <string name="wPaidToGenerated">Worker Ali</string>
+
+
+    <!-- VIEW PAYMENT HISTORY PAGE -->
+    <string name="completedBy">Completed By:</string>
+    <string name="paid">Paid:</string>
+    <string name="paidAmount">RM 150.00</string>
+    <string name="dateMsg">Date:</string>
+    <string name="viewReceipt">View Receipt</string>
+    <string name="choresName">House Cleaning</string>
+    <string name="workerName">Ali</string>
+
+    <!-- VIEW EARNINGS HISTORY PAGE -->
+    <string name="postedBy">Posted By:</string>
+    <string name="posterName">Testing Name</string>
+    <string name="received">Received:</string>
+    <string name="receivedAmount">RM 150.00</string>
+
+
+    <string name="welcome">WELCOME</string>
+    <string name="login">LOGIN</string>
+    <string name="forgotPw">FORGOT PASSWORD</string>
+    <string name="editAdd">EDIT ADDRESS</string>
+    <string name="btnSignup">SIGN UP</string>
+    <string name="btnLogout">LOGOUT</string>
+    <string name="myAcc">MY ACCOUNT</string>
+    <string name="homePage">HOME</string>
+    <string name="signup">SIGN UP</string>
+    <string name="add">MY ADDRESS</string>
+    <string name="forgot">Forgot Password ?</string>
+    <string name="change">Reset Password</string>
+    <string name="any">Do not have any account? Sign up</string>
+    <string name="trending">Chores</string>
+    <string name="already">Already have any account? Login</string>
+    <string name="username">Username : </string>
+    <string name="ic">IC Number : </string>
+
+    <string name="phone">Phone Number : </string>
+    <string name="email">Please Enter Your Email : </string>
+    <string name="bank">Bank : </string>
+    <string name="acc">Account Number : </string>
+    <string name="pw">Current Password : </string>
+    <string name="newPw">New Password : </string>
+    <string name="conPw">Confirm Password : </string>
+    <string-array name="bank">
+        <item>Affine Bank</item>
+        <item>Alliance Bank</item>
+        <item>AmBank</item>
+        <item>CIMB</item>
+        <item>Maybank</item>
+        <item>Public Bank</item>
+    </string-array>
+    <string name="home">Home</string>
+
+    <string name="payment">Payment</string>
+    <string name="review">Review</string>
+    <string name="user">User</string>
+    <string name="profile">Profile</string>
+
+    <string name="catogory">Categories</string>
+    <string name="workingTime">Working Time</string>
+    <string name="myProfile">MY PROFILE</string>
+
+</resources>

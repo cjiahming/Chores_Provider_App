@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home" />
+    <item
+        android:id="@+id/choresFragment"
+        android:icon="@drawable/baseline_list_alt_24"
+        android:title="Task" />
+    <item
+        android:id="@+id/paymentFragment"
+        android:icon="@drawable/baseline_payment_24"
+        android:title="Payment" />
+    <item
+        android:id="@+id/reviewFragment"
+        android:icon="@drawable/baseline_star_24"
+        android:title="Review" />
+    <item
+        android:id="@+id/userFragment"
+        android:icon="@drawable/baseline_person_24"
+        android:title="User" />
+</menu>

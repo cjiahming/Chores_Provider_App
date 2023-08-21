@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/advancePaymentTitle"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="52dp"
+        android:text="@string/advancePaymentMsg"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="120dp"
+        android:background="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/fpxMethodTitle"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="52dp"
+        android:text="@string/fpxMethod"
+        android:textColor="#3E3E3E"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="3dp"
+        android:background="#000000"
+        app:layout_constraintTop_toBottomOf="@+id/fpxMethodTitle"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/maybankTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/maybank"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="50dp"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/maybankTextView"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/publicBankTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/publicBank"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/maybankTextView" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="50dp"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/publicBankTextView"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/cimbTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/cimb"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/publicBankTextView" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="50dp"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cimbTextView"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/hongLeongTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/hongLeong"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cimbTextView" />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="50dp"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hongLeongTextView"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/bankIslamTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/bankIslam"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hongLeongTextView" />
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="30dp"
+        android:background="#000000"
+        app:layout_constraintTop_toBottomOf="@+id/bankIslamTextView"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/creditDebitCardTitle"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="52dp"
+        android:text="@string/creditDebitMethod"
+        android:textColor="#3E3E3E"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view7" />
+
+    <View
+        android:id="@+id/view8"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="3dp"
+        android:background="#000000"
+        app:layout_constraintTop_toBottomOf="@+id/creditDebitCardTitle"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/payUsingCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/usingCard"
+        android:textColor="#3E3E3E"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view8" />
+
+    <View
+        android:id="@+id/view9"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="30dp"
+        android:background="#000000"
+        app:layout_constraintTop_toBottomOf="@+id/payUsingCard"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/eWalletMethod"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="52dp"
+        android:text="@string/ewalletMethod"
+        android:textColor="#3E3E3E"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view9" />
+
+    <View
+        android:id="@+id/view10"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="3dp"
+        android:background="#000000"
+        app:layout_constraintTop_toBottomOf="@+id/eWalletMethod"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/payTng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/tng"
+        android:textColor="#3E3E3E"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view10" />
+
+    <View
+        android:id="@+id/view11"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="50dp"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payTng"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/payBoost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/boost"
+        android:textColor="#3E3E3E"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view11" />
+
+    <View
+        android:id="@+id/view12"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="50dp"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payBoost"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/payEWallet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/grab"
+        android:textColor="#3E3E3E"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view12" />
+
+    <ImageButton
+        android:id="@+id/maybankBtn"
+        android:layout_width="40dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="177dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/maybankTextView"
+        app:layout_constraintTop_toBottomOf="@+id/fpxMethodTitle"
+        app:srcCompat="@drawable/baseline_play_arrow_24"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/pbeBtn"
+        android:layout_width="40dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toEndOf="@+id/publicBankTextView"
+        app:layout_constraintTop_toBottomOf="@+id/view3"
+        app:srcCompat="@drawable/baseline_play_arrow_24"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/cimbBtn"
+        android:layout_width="40dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toEndOf="@+id/cimbTextView"
+        app:layout_constraintTop_toBottomOf="@+id/view4"
+        app:srcCompat="@drawable/baseline_play_arrow_24"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/hongLeongBtn"
+        android:layout_width="40dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@+id/hongLeongTextView"
+        app:layout_constraintTop_toBottomOf="@+id/cimbBtn"
+        app:srcCompat="@drawable/baseline_play_arrow_24"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/bankIslamBtn"
+        android:layout_width="40dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toEndOf="@+id/bankIslamTextView"
+        app:layout_constraintTop_toBottomOf="@+id/view6"
+        app:srcCompat="@drawable/baseline_play_arrow_24"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/payCardBtn"
+        android:layout_width="40dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="9dp"
+        app:layout_constraintStart_toEndOf="@+id/payUsingCard"
+        app:layout_constraintTop_toBottomOf="@+id/creditDebitCardTitle"
+        app:srcCompat="@drawable/baseline_play_arrow_24"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/tngBtn"
+        android:layout_width="40dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@+id/payTng"
+        app:layout_constraintTop_toBottomOf="@+id/view10"
+        app:srcCompat="@drawable/baseline_play_arrow_24"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/boostBtn"
+        android:layout_width="40dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toEndOf="@+id/payBoost"
+        app:layout_constraintTop_toBottomOf="@+id/view11"
+        app:srcCompat="@drawable/baseline_play_arrow_24"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/grabBtn"
+        android:layout_width="40dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/payEWallet"
+        app:layout_constraintTop_toBottomOf="@+id/view12"
+        app:srcCompat="@drawable/baseline_play_arrow_24"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

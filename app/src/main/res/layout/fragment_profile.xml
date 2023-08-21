@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Profile">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".FirstFragment">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/top_nav"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/myPofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:text="@string/myProfile"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationY="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/addressPanel"
+            android:layout_width="400dp"
+            android:layout_height="515dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.454"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:layout_constraintVertical_bias="0.388"
+            app:srcCompat="@drawable/signup_panel" />
+
+        <EditText
+            android:id="@+id/editUsername"
+            android:layout_width="260dp"
+            android:layout_height="30dp"
+            android:background="@drawable/white_circle"
+            android:ems="10"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Username"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="20dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/addressPanel"
+            app:layout_constraintStart_toStartOf="@+id/addressPanel"
+            app:layout_constraintTop_toBottomOf="@+id/textUser" />
+
+        <EditText
+            android:id="@+id/editIc"
+            android:layout_width="260dp"
+            android:layout_height="30dp"
+            android:background="@drawable/white_circle"
+            android:ems="10"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Address"
+            android:inputType="textPostalAddress"
+            android:paddingLeft="20dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/addressPanel"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="@+id/addressPanel"
+            app:layout_constraintTop_toBottomOf="@+id/textIC" />
+
+        <EditText
+            android:id="@+id/editAge"
+            android:layout_width="260dp"
+            android:layout_height="30dp"
+            android:background="@drawable/white_circle"
+            android:ems="10"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Age"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/addressPanel"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="@+id/addressPanel"
+            app:layout_constraintTop_toBottomOf="@+id/textAge" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="260dp"
+            android:layout_height="30dp"
+            android:background="@drawable/white_circle"
+            android:ems="10"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:paddingLeft="20dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/addressPanel"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="@+id/addressPanel"
+            app:layout_constraintTop_toBottomOf="@+id/textPhone" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="260dp"
+            android:layout_height="30dp"
+            android:background="@drawable/white_circle"
+            android:ems="10"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="20dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/addressPanel"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="@+id/addressPanel"
+            app:layout_constraintTop_toBottomOf="@+id/textEmail" />
+
+        <TextView
+            android:id="@+id/textUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/username"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/addressPanel"
+            app:layout_constraintHorizontal_bias="0.196"
+            app:layout_constraintStart_toStartOf="@+id/addressPanel"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+
+        <TextView
+            android:id="@+id/textIC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Address :"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/addressPanel"
+            app:layout_constraintHorizontal_bias="0.197"
+            app:layout_constraintStart_toStartOf="@+id/addressPanel"
+            app:layout_constraintTop_toBottomOf="@+id/editUsername" />
+
+        <TextView
+            android:id="@+id/textAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/age"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/addressPanel"
+            app:layout_constraintHorizontal_bias="0.176"
+            app:layout_constraintStart_toStartOf="@+id/addressPanel"
+            app:layout_constraintTop_toBottomOf="@+id/editIc" />
+
+        <TextView
+            android:id="@+id/textPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/phone"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/addressPanel"
+            app:layout_constraintHorizontal_bias="0.215"
+            app:layout_constraintStart_toStartOf="@+id/addressPanel"
+            app:layout_constraintTop_toBottomOf="@+id/editAge" />
+
+        <TextView
+            android:id="@+id/textEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/email"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/addressPanel"
+            app:layout_constraintHorizontal_bias="0.293"
+            app:layout_constraintStart_toStartOf="@+id/addressPanel"
+            app:layout_constraintTop_toTopOf="@+id/addressPanel" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:text="SAVE"
+            app:layout_constraintEnd_toEndOf="@+id/addressPanel"
+            app:layout_constraintHorizontal_bias="0.192"
+            app:layout_constraintStart_toEndOf="@+id/btnCancel"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+        <ImageButton
+            android:id="@+id/imgbtnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/baseline_arrow_back_24"
+            android:src="@drawable/baseline_arrow_back_24"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/toolbar" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="44dp"
+            android:text="CANCEL"
+            app:layout_constraintStart_toStartOf="@+id/addressPanel"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
